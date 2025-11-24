@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio01</title>
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", sans-serif;
+            
+        }
+
+      body{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+      }
+
+        #header{
+            height: 475px;
+            width: 1440px;
+            background-color: #303030;
+            display: flex;
+
+         
+
+        }
+
+        #txt-header{
+            color: white;
+            margin: 200px 0px 0px 50px;
+            font-weight: 300;
+        
+        }
+
+        #paragrafo-header{
+            margin-top: 20px;
+            font-size: 30px;
+
+        }
+
+        #section2-container{
+           
+            height: 250px;
+            width: 1440px;
+            background-color: #F9F9F9;
+            
+        }
+
+        #section2-txt{
+            height: 229px;
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: repeat(3, 1fr);
+
+            align-items: center;
+            margin-left: 150px;
+            font-size: 20px;
+            
+        }
+
+        #section3-container{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: auto;
+            width: 1440px;
+            justify-content: space-between;
+
+            background-color: white;
+
+        }
+
+        #txt-section3{
+            font-weight: 300;
+            margin: 180px 0px 0px 100px;
+            font-size: 1.38rem;
+            width: fit-content;
+            display: block;
+            
+            
+        }
+
+        #titulo-section3{
+            margin-bottom: 30px;
+            font-weight: 400;
+            white-space: nowrap;
+        }
+
+        #img-section3{
+            width: 605px;
+            height: 510px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+    
+        }
+
+        #paragro-sectino3{
+            
+            text-align: left;
+            width: 100%;
+            font-size: 1.6rem;
+        }
+
+        #titulo-header{
+            font-size: 60px;
+        }
+
+        #section4-container{
+            text-align: center;
+            background-color: #303030;
+            width: 1440px;
+
+        }
+
+        #titulo-section4{
+            font-size: 25px;
+            color: #F9F9F9;
+            padding-top: 40px;
+            font-size: 20px;
+        }
+        
+        input{
+            height: 72px;
+            width: 508px;
+            background-color: #ffff;
+            text-decoration: none;
+            list-style: none;
+            border-radius: 15px;
+            margin-top: 40px;
+            font-size: 20px;
+            padding: 30px;
+            outline: none;
+        }
+
+        button{
+            background-color: #C07212;
+            height: 74px;
+            width: 286px;
+            margin-top: 80px;
+            color: #F9F9F9;
+            border-radius: 15px;
+            font-size: 25px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            word-spacing: 2px;
+            cursor: pointer;
+            margin-bottom: 50px;
+        }
+
+        button:hover{
+            background-color: #cb8631;
+            box-shadow: -4px 4px 7px -2px rgba(27, 27, 27, 0.59);
+            transform: scaleX(1.01);
+            transition: 0.2s;
+        }
+
+         input:focus {
+            font-size: 20px;
+            padding: 30px;
+        }
+
+    </style>
+
+<body>
+
+    <main>
+
+    <section id="header">
+
+        <div id="txt-header">
+            <h1 id="titulo-header">Tradição em projetos de arquitetura</h1>
+            <p id="paragrafo-header">Arquitetura residencial e comercial. </p>
+        </div>     
+
+    </section>
+
+
+    <section id="section2-container">
+        <div id="section2-txt">
+            <div>
+                <h1>850</h1>
+                <p>empreendimentos construídos</p>
+            </div>
+
+             <div>
+                <h1>40</h1>
+                <p>anos de mercado e experiência </p>
+            </div>
+
+             <div>
+                <h1>2,000,000</h1>
+                <p>m² em projetos construídos</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="section3-container">
+        
+        <div id="txt-section3">
+            <h1 id="titulo-section3">Arquitetos com História e Experiência.</h1>
+            <p id="paragro-sectino3" >Nós realizamos desde 2002 projetos e gerenciamento de obras. <br>Com mais de 800 projetos e 2.000.000 de m² construídos, tendo <br>como principal proposta transformar em realidade os sonhos de <br>seus clientes, criando projetos personalizados, unindo a tradição <br> e a modernidade em nossos projetos.</p>
+        </div>
+
+        <div >
+            <img  id="img-section3"src="./image/design.svg" alt="design arquitetura">
+        </div>
+    </section>
+
+    <section id="section4-container">
+
+        <div id="titulo-section4">
+            <h1>Conheça mais sobre nossos serviços:</h1>
+        </div>
+        
+
+        <form action="https://api.sheetmonkey.io/form/c5x7WnMB8u5xNPjKuHGXXC" method="post">
+            <input type="text" name="Name" id="input-name" placeholder="Name" required> <br>
+            <input type="email" name="Email" id="input-email" placeholder="Email" required> <br>
+            <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+            <button type="submit"> Fale Conosco </button>
+        </form>
+
+    </section>
+
+    </main>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
